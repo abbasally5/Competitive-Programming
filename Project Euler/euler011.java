@@ -16,13 +16,13 @@ import static java.util.Arrays.*;
 import static java.lang.Character.*;
 
 
-public class euler11
+public class euler011
 {
     int max;
     int[][] grid;
     public void run() throws Exception
     {
-    	Scanner cin = new Scanner(new File("euler11.dat"));
+    	Scanner cin = new Scanner(new File("euler011.dat"));
     	grid = new int[20][20];
     	max = Integer.MIN_VALUE;
     	for (int r = 0; r < 20; r ++)
@@ -83,6 +83,6 @@ public class euler11
 
     public static void main(String[] args) throws Exception
     {
-        new euler11().run();
+        new euler011().run();
     }
 }

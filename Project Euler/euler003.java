@@ -4,7 +4,7 @@ import java.io.*;
 import java.math.*;
 import static java.lang.System.*;
 
-class euler3
+class euler003
 {
 	public void run()
 	{
@@ -43,6 +43,6 @@ class euler3
 	
 	public static void main(String... args)
 	{
-		new euler3().run();
+		new euler003().run();
 	}
 }

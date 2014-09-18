@@ -16,7 +16,7 @@ import static java.util.Arrays.*;
 import static java.lang.Character.*;
 
 
-public class euler14
+public class euler014
 {
     int[] sieve = new int[1000000];
     
@@ -83,6 +83,6 @@ public class euler14
 
     public static void main(String[] args) throws Exception
     {
-        new euler14().run();
+        new euler014().run();
     }
 }

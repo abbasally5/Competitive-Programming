@@ -16,7 +16,7 @@ import static java.util.Arrays.*;
 import static java.lang.Character.*;
 
 
-public class euler7
+public class euler007
 {
     public void run() throws Exception
     {
@@ -42,6 +42,6 @@ public class euler7
 
     public static void main(String[] args) throws Exception
     {
-        new euler7().run();
+        new euler007().run();
     }
 }
