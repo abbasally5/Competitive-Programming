@@ -1,35 +1,20 @@
-import java.io.*;
-import java.util.*;
-import java.lang.*;
-import java.math.*;
-import java.text.*;
 import static java.lang.System.*;
-import java.math.BigInteger.*;
 
 class euler015
 {
 	void run()
 	{
-		out.println(calcSum(15));
-		out.println(calcSum(1000));
+		out.println(recur(40,20,1,1));
 	}
-
-	//trivial standard way to solve problem
-	BigInteger calcSum(int pow)
+	
+	long recur(long n, long c, int cnt, long num)
 	{
-		BigInteger n = BigInteger.valueOf(2);
-		n = n.pow(pow);
-		BigInteger sum = BigInteger.valueOf(0);
-		while (n.compareTo(BigInteger.valueOf(0)) > 0)
-		{
-			sum = sum.add(n.mod(BigInteger.valueOf(10)));
-			n = n.divide(BigInteger.valueOf(10));
-		}
-		return sum;
+		if (c <= 0) return num;
+		return recur(n - 1, c - 1, cnt + 1, num * n/cnt);
 	}
-
-	public static void main(String ... args)
+	
+	public static void main(String... args)
 	{
-		new euler015().run();
+			new euler015().run();
 	}
 }
